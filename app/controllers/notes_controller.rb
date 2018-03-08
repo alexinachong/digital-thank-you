@@ -1,9 +1,22 @@
 class NotesController < ApplicationController
+
+  def show
+    @note = Note.find_by(id: params[:id])
+
+    if @note
+      render :show
+    else
+      render json: @note.errors.full_messages
+    end
+  end
+
   def create
     @note = Note.new(note_params)
 
     if @note.save
       render "it worked!"
+    else
+      render json: @note.errors.full_messages
     end
   end
 

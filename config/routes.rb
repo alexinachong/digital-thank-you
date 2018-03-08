@@ -7,8 +7,8 @@ Rails.application.routes.draw do
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  resources :customers, only: [:create]
-  resources :orders, only: [:create]
-  resources :notes, only: [:create]
+  resources :customers, only: [:show, :create]
+  resources :orders, only: [:show, :create]
+  resources :notes, only: [:show, :create]
 
 end
