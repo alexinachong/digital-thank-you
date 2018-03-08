@@ -14,7 +14,7 @@ class NotesController < ApplicationController
     @note = Note.new(note_params)
 
     if @note.save
-      render "it worked!"
+      render :show
     else
       render json: @note.errors.full_messages
     end

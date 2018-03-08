@@ -14,7 +14,7 @@ class CustomersController < ApplicationController
     @customer = Customer.new(customer_params)
 
     if @customer.save
-      render "it worked!"
+      render :show
     else
       render json: @customer.errors.full_messages
     end

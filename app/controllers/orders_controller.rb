@@ -7,14 +7,14 @@ class OrdersController < ApplicationController
       render :show
     else
       render json: @order.errors.full_messages
-    end 
+    end
   end
 
   def create
     @order = Order.new(order_params)
 
     if @order.save
-      render "it worked!"
+      render :show
     else
       render json: @order.errors.full_messages
     end
