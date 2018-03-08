@@ -1,0 +1,26 @@
+# == Schema Information
+#
+# Table name: notes
+#
+#  id         :integer          not null, primary key
+#  order_id   :integer          not null
+#  photo_url  :string           not null
+#  template   :string           not null
+#  message    :string           not null
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  order_id: 1
+  photo_url: MyString
+  template: MyString
+  message: MyString
+
+two:
+  order_id: 1
+  photo_url: MyString
+  template: MyString
+  message: MyString

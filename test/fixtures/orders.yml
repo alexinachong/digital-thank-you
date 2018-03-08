@@ -1,0 +1,26 @@
+# == Schema Information
+#
+# Table name: orders
+#
+#  id           :integer          not null, primary key
+#  customer_id  :integer          not null
+#  item         :string           not null
+#  giftee_email :string           not null
+#  giftee_name  :string           not null
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer_id: 1
+  item: MyString
+  giftee_email: MyString
+  giftee_name: MyString
+
+two:
+  customer_id: 1
+  item: MyString
+  giftee_email: MyString
+  giftee_name: MyString
